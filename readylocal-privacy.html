@@ -25,38 +25,41 @@
 <body>
 
 <h1>ReadyLocal Privacy Policy</h1>
-<p class="updated">Last updated: May 27, 2026</p>
+<p class="updated">Last updated: July 14, 2026</p>
 
 <div class="highlight">
   <strong>Summary:</strong> ReadyLocal is an offline-first emergency preparedness application.
   We do not collect, store, or transmit your personal data to any external server.
-  All data you create (family plans, checklists, settings) stays on your device only.
+  All data you create (family plans, checklists, documents, settings) stays on your device only.
 </div>
 
 <h2>1. Information We Collect</h2>
 <p>ReadyLocal collects <strong>no personally identifiable information (PII)</strong> and no location data.</p>
 <ul>
   <li><strong>App preferences &amp; settings</strong> — Stored locally on your device using AsyncStorage. Never transmitted.</li>
-  <li><strong>Family emergency plan data</strong> — Stored locally on your device. Never transmitted.</li>
-  <li><strong>Checklist progress</strong> — Stored locally on your device. Never transmitted.</li>
-  <li><strong>Subscription status</strong> — If you purchase a Pro subscription, RevenueCat (our billing provider) processes the transaction and stores a pseudonymous app user ID to validate entitlements. See Section 4.</li>
+  <li><strong>Family emergency plan, ICE profile, and checklist progress</strong> — Stored locally on your device. Never transmitted.</li>
+  <li><strong>Document Vault photos</strong> (Pro feature) — Photos you add of IDs, insurance policies, or medical records are stored only in the app's private, on-device storage. Never uploaded anywhere.</li>
+  <li><strong>Subscription status</strong> — If you purchase a Pro subscription, RevenueCat (our billing provider) processes the transaction and stores a pseudonymous app user ID and purchase history to validate entitlements. See Section 4.</li>
 </ul>
 
 <h2>2. Permissions We Request</h2>
 <ul>
-  <li><strong>Camera</strong> — Used solely to control the hardware LED flashlight for the SOS distress beacon feature. No photos or video are captured or stored.</li>
-  <li><strong>Microphone / Audio</strong> — Used solely to play emergency siren sounds through the device speaker. No audio is recorded.</li>
+  <li><strong>Camera</strong> — Used to control the hardware LED flashlight for the SOS distress beacon, and (Pro Document Vault feature) to photograph your own documents for local, on-device storage. Vault photos are never uploaded or shared.</li>
+  <li><strong>Photos / Media Library</strong> — Used only to save images you generate in the app (e.g. your Emergency ICE Card) to your device's photo gallery, and to let you pick an existing photo when adding a Document Vault entry.</li>
+  <li><strong>Notifications</strong> — Used only for local, on-device reminders you schedule yourself (e.g. supply expiration alerts). These are not push notifications and nothing is sent from a server.</li>
+  <li><strong>Modify system settings (screen brightness)</strong> — Used only in Low-Battery Emergency Mode to dim the screen and conserve power; restored when you exit that mode.</li>
+  <li><strong>Device biometrics / screen lock</strong> — Used to unlock the Document Vault using your device's existing fingerprint, face unlock, or PIN. ReadyLocal never receives your biometric data — the device operating system handles authentication.</li>
 </ul>
-<p>No other permissions are requested.</p>
+<p>ReadyLocal does not request microphone or audio-recording permissions. No location, contacts, or SMS permissions are requested.</p>
 
 <h2>3. Data Storage</h2>
-<p>All application data is stored locally on your device using React Native AsyncStorage. This data is:</p>
+<p>All application data — settings, plans, checklists, ICE profile, and Document Vault photos — is stored locally on your device using AsyncStorage and on-device file storage. This data is:</p>
 <ul>
   <li>Never uploaded to any server operated by ReadyLocal</li>
   <li>Accessible only to the ReadyLocal application</li>
   <li>Deleted when you uninstall the application</li>
 </ul>
-<p>To erase all local data manually, go to <strong>Settings &gt; Clear All Data</strong> within the app, or uninstall and reinstall the application.</p>
+<p>ReadyLocal does not currently offer an in-app "erase all data" control. To remove all local data, uninstall the application (this permanently deletes all locally stored data, including Vault photos) or clear the app's storage from your device's system Settings &gt; Apps &gt; ReadyLocal &gt; Storage.</p>
 
 <h2>4. In-App Purchases (RevenueCat)</h2>
 <p>If you purchase a ReadyLocal Pro subscription, payments are processed by:</p>
